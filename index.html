@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- webpage title -->
+    <title>Registration Form</title>
+    <!-- linking SASS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- linking favicon -->
+    <link rel="shortcut icon" href="./../../public/favicon.ico" type="image/x-icon" />
+    <!-- unicons CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  </head>
+  <body>
+    <section id="form-section">
+      <div class="form-container">
+        <!-- form header -->
+        <div class="form-header">
+          <!-- form title -->
+          <h2 class="form-title">SIGN UP</h2>
+
+          <!-- form server side validation error message -->
+          <div class="show-error">
+            <p class="error-message">Something went wrong. You can't Registration successfully. Try to again. Thanks</p>
+          </div>
+        </div>
+
+        <!-- form field -->
+        <form action="" method="post" id="input-form">
+          <!-- input group / username -->
+          <div class="form-control">
+            <label for="username">*Username</label>
+            <input type="text" name="username" placeholder="Type here a unique username" id="username" />
+            <i class="uil uil-check-circle"></i>
+            <i class="uil uil-exclamation-circle"></i>
+            <small>This field is required. Please input this form.</small>
+          </div>
+
+          <!-- input group / email -->
+          <div class="form-control">
+            <label for="email">*Your Email</label>
+            <input type="email" name="email" placeholder="Type here your email address" id="email" />
+            <i class="uil uil-check-circle"></i>
+            <i class="uil uil-exclamation-circle"></i>
+            <small>This field is required. Please input this form.</small>
+          </div>
+
+          <!-- input group / phone number -->
+          <div class="form-control">
+            <label for="phoneNumber">*Phone Number</label>
+            <input type="tel" name="phoneNumber" placeholder="Type here your phone number" id="phoneNumber" />
+            <i class="uil uil-check-circle"></i>
+            <i class="uil uil-exclamation-circle"></i>
+            <small>This field is required. Please input this form.</small>
+          </div>
+
+          <!-- input group / password -->
+          <div class="form-control">
+            <label for="password">*Password</label>
+            <input type="password" name="password" placeholder="Type here a unique and strong password" id="password" />
+            <i class="uil uil-check-circle"></i>
+            <i class="uil uil-exclamation-circle"></i>
+            <small>This field is required. Please input this form.</small>
+          </div>
+
+          <!-- input group / check password -->
+          <div class="form-control">
+            <label for="checkPassword">*Confirm Password</label>
+            <input type="password" name="checkPassword" placeholder="Retype here your define unique and strong password" id="checkPassword" />
+            <i class="uil uil-check-circle"></i>
+            <i class="uil uil-exclamation-circle"></i>
+            <small>This field is required. Please input this form.</small>
+          </div>
+
+          <!-- input group / TAC -->
+          <div class="form-control">
+            <input type="checkbox" name="agree-tac" id="agree-tac" />
+            <p class="message-tac">*I agree to the Terms and Conditions (TAC).</p>
+          </div>
+
+          <!-- submit button -->
+          <button type="submit" name="submit" id="submit" class="submit">Submit Now</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- script / js -->
+    <script src="form.js"></script>
+  </body>
+</html>
